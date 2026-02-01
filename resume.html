@@ -1,0 +1,1690 @@
+<!-- <div style="text-align: center; margin: 20px 0;">
+    <a href="https://www.janakkumarshrestha0.com.np/resume.html"
+       style="background-color: #232f3e;
+              color: white;
+              padding: 18px 35px;
+              text-decoration: none;
+              font-size: 20px;
+              font-weight: bold;
+              border-radius: 8px;
+              display: inline-block;
+              font-family: Arial, sans-serif;
+              box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+       GET MY RESUME
+    </a>
+</div> -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png" />
+  <link rel="manifest" href="img/fav/site.webmanifest" />
+  <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5" />
+  <title>Janak Shrestha - Resume</title>
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* Add new styles for certifications grid at the top of style block */
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+      text-decoration: none;
+      /* For anchor tags */
+      color: inherit;
+      /* For anchor tags */
+    }
+
+    .cert-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent-color);
+    }
+
+    .cert-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(59, 130, 246, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .cert-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--accent-color);
+    }
+
+    .cert-title {
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 0.95rem;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .cert-issuer {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .cert-arrow {
+      margin-left: auto;
+      color: var(--text-light);
+      transition:
+        color 0.2s,
+        transform 0.2s;
+    }
+
+    .cert-item:hover .cert-arrow {
+      color: var(--accent-color);
+      transform: translateX(2px);
+    }
+
+    .cert-arrow svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* Styles for Connect section */
+    .connect-grid {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .connect-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      background: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      border: 1px solid var(--border-color);
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+
+    .connect-item:hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .connect-item svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: currentColor;
+    }
+
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3b82f6;
+      --accent-hover: #2563eb;
+      --text-color: #374151;
+      --text-light: #6b7280;
+      --bg-color: #f3f4f6;
+      --card-bg: #ffffff;
+      --border-color: #e5e7eb;
+      --section-spacing: 2rem;
+      --radius: 8px;
+      --shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --print-shadow: none;
+      --print-shadow: none;
+    }
+
+    .subsection-title {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin: 2rem 0 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .subsection-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+      margin-left: 1rem;
+    }
+
+    .subsection-title span {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--accent-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+    }
+
+    /* Modifier for transparent/centered skill categories */
+    .skill-category.transparent {
+      width: 100%;
+      border: none;
+      padding: 0;
+      background: transparent;
+    }
+
+    .skill-category.transparent .skill-list {
+      justify-content: center;
+    }
+
+    /* Specific tweaks for Connect items in grid */
+    .connect-grid-compact {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .connect-item-compact {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 2rem 1rem;
+    }
+
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Print Button */
+    .fab-print {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: var(--accent-color);
+      color: white;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 100;
+      border: none;
+    }
+
+    .fab-print:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+    }
+
+    .fab-print svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      color: white;
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .header-content {
+      flex: 1;
+      text-align: left;
+    }
+
+    h1 {
+      font-family: "Merriweather", serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+
+    .summary {
+      max-width: 100%;
+      margin-bottom: 2rem;
+      color: var(--text-color);
+      font-size: 1rem;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-item svg {
+      width: 1rem;
+      height: 1rem;
+      fill: #94a3b8;
+    }
+
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact-item a:hover {
+      color: white;
+      border-bottom-color: white;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    /* Main Content */
+    main {
+      padding: 3rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    /* Articles (Experience/Education Items) */
+    .project-link a {
+      font-size: 0.9rem;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link a:hover {
+      text-decoration: underline;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    article:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .org-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .date-range {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      font-feature-settings: "tnum";
+      font-variant-numeric: tabular-nums;
+    }
+
+    .project-link a {
+      font-size: 0.9rem;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link a:hover {
+      text-decoration: underline;
+    }
+
+    .role-title {
+      font-family: "Merriweather", serif;
+      font-size: 1rem;
+      color: var(--primary-color);
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+
+    .details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .details li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+      font-size: 0.95rem;
+    }
+
+    .details li::before {
+      content: "•";
+      position: absolute;
+      left: 0.25rem;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: rgba(59, 130, 246, 0.1);
+      color: #1e40af;
+      padding: 0 4px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category h3 {
+      font-size: 1rem;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background-color: var(--bg-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Certifications & Awards */
+    .compact-list {
+      list-style: none;
+    }
+
+    .compact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .compact-list svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      flex-shrink: 0;
+      fill: var(--accent-color);
+      margin-top: 0.15rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f8fafc;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      body {
+        padding: 0;
+      }
+
+      .resume-container {
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      header {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-content {
+        text-align: center;
+      }
+
+      .contact-info {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 2rem 1.5rem;
+      }
+
+      .item-header {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .role-title {
+        margin-top: 0.25rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        color: black;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+      }
+
+      header {
+        background: white;
+        color: black;
+        padding: 0 0 2rem 0;
+        border-bottom: 2px solid var(--primary-color);
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .header-content {
+        text-align: left;
+      }
+
+      h1 {
+        color: var(--primary-color);
+      }
+
+      .contact-info {
+        color: var(--text-color);
+      }
+
+      .contact-item svg {
+        fill: var(--primary-color);
+      }
+
+      .fab-print,
+      footer {
+        display: none !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .highlight {
+        background: none;
+        color: black;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      /* Prevent awkward breaks */
+      article,
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Print Button -->
+  <button class="fab-print" onclick="window.print()" aria-label="Print Resume">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
+    </svg>
+  </button>
+
+  <div class="resume-container">
+    <header>
+      <img src="img/janak-resume.jpg" alt="Janak Kumar Shrestha" class="profile-pic" />
+      <div class="header-content">
+        <h1>Janak Kumar Shrestha</h1>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <span>Kathmandu, Nepal</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <span>+977 9826894008</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            <a href="mailto:janakshresthapro@gmail.com">janakshresthapro@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+            </svg>
+            <a href="https://www.janakkumarshrestha0.com.np/" target="_blank">Portfolio Website</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-label="Summary">
+        <p class="summary">
+          Aspiring DevOps Engineer with hands-on expertise in
+          architecting and automating scalable cloud infrastructure and CI/CD
+          pipelines. Hands-on experience in containerization (Docker, Kubernetes),
+          infrastructure as code (Terraform, Ansible), and cloud-native
+          deployment on AWS. Holds the AWS Solutions Architect – Associate
+          certification and possesses deep, practical experience across AWS
+          services including EC2, S3, VPC, IAM, RDS, and CloudWatch.
+          Passionate about implementing resilient, secure, and automated
+          systems that enhance operational efficiency and accelerate software
+          delivery.
+        </p>
+      </section>
+
+      <section aria-label="Projects and Experience">
+        <h2>Projects & Experience</h2>
+
+        <!-- EXPERIENCE SECTION -->
+        <div class="subsection-title"><span>Experience</span></div>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Broadway Infosis Pvt. Ltd.</div>
+            <div class="date-range">
+              Kathmandu, Nepal • May 2025 — Jul 2025
+            </div>
+          </div>
+          <div class="role-title">DevOps Training</div>
+          <div class="details">
+            <ul>
+              <li>
+                Covering Linux fundamentals, networking, cryptography, source
+                control management (Git), RDBMS, establishing a strong
+                foundation in DevOps prerequisites and best practices.
+              </li>
+              <li>
+                Hands-on experience with containerization and orchestration
+                technologies including
+                <span class="highlight">Docker and Kubernetes</span>, building
+                multi-container applications with Docker Compose, managing
+                pods and deployments, and implementing CI/CD pipelines with
+                Jenkins for automated application delivery.
+              </li>
+              <li>
+                Automated infrastructure provisioning using
+                <span class="highlight">Ansible playbooks</span> and
+                Infrastructure as Code (IaC) with Terraform, reducing manual
+                configuration efforts and ensuring consistent environments.
+              </li>
+              <li>
+                Gained hands-on experience with
+                <span class="highlight">AWS cloud services</span> including
+                EC2, VPC, S3, Load Balancers, and IAM policies and deploying
+                scalable applications.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Adex International Pvt. Ltd.</div>
+            <div class="date-range">
+              Lalitpur, Nepal • Nov 2025 — Dec 2025
+            </div>
+          </div>
+          <div class="role-title">
+            AWS Solutions Architect Associate - Apprenticeship
+          </div>
+          <div class="details">
+            <ul>
+              <li>
+                Completed comprehensive AWS Academy Cloud Architecting program
+                covering <span class="highlight">16 modules</span> including
+                compute, storage, databases, networking, security, and
+                serverless architectures aligned with the AWS Well-Architected
+                Framework.
+              </li>
+              <li>
+                Designed and implemented
+                <span class="highlight">scalable, highly available solutions</span>
+                through hands-on labs involving Amazon EC2, S3, RDS, VPC,
+                Lambda, and CloudFormation, demonstrating proficiency in
+                building production-grade AWS architectures.
+              </li>
+              <li>
+                Automated infrastructure deployment using
+                <span class="highlight">AWS CloudFormation</span> and built
+                decoupled serverless applications with Lambda, API Gateway,
+                and SQS, reducing manual provisioning efforts and improving
+                system resilience.
+              </li>
+              <li>
+                Successfully completed capstone project and course assessment,
+                applying
+                <span class="highlight">disaster recovery patterns</span>,
+                cost optimization strategies, and security best practices
+                including IAM policies, encryption, and VPC security
+                configurations.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Datahub Nepal Pvt. Ltd.</div>
+            <div class="date-range">
+              Lalitpur, Nepal • May 2025 — Jul 2025
+            </div>
+          </div>
+          <div class="role-title">System Administrator - Intern</div>
+          <div class="details">
+            <ul>
+              <li>
+                Monitored datacenter infrastructure using
+                <span class="highlight">Zabbix monitoring system</span>,
+                tracking server health, resource utilization, and system
+                performance metrics to ensure optimal uptime and proactive
+                issue detection.
+              </li>
+              <li>
+                Managed cloud resources including
+                <span class="highlight">virtual machines and VPC configurations</span>
+                across multiple cloud platforms, provisioning and maintaining
+                client environments in accordance with service level
+                agreements.
+              </li>
+              <li>
+                Performed compute resource upgrades on client VMs, scaling
+                <span class="highlight">CPU, memory, and disk resources</span>
+                based on performance requirements, and configured NFS and LVM
+                storage solutions for enhanced data management.
+              </li>
+              <li>
+                Worked with enterprise datacenter infrastructure including
+                <span class="highlight">Pure Storage flash arrays</span>,
+                VMware ESXi hypervisors, Fortigate firewalls, and host units,
+                gaining hands-on experience with the underlying components
+                powering cloud services.
+              </li>
+              <li>
+                Provided
+                <span class="highlight">customer support and system troubleshooting</span>
+                as a system administrator, resolving technical issues,
+                responding to service requests, and maintaining system
+                stability in a datacenter environment.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- PROJECTS SECTION -->
+        <div class="subsection-title"><span>Projects</span></div>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Quickmail - MERN Stack Email Service</div>
+            <div class="project-link"><a href="https://quickmail.janakkumarshrestha0.com.np/" target="_blank">Project
+                Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Built a production-grade email service using the <span class="highlight">MERN Stack</span>,
+                implementing <strong>Docker multi-stage builds</strong> for optimized containerization and hybrid
+                database support (MongoDB Atlas/Local).</li>
+              <li>Engineered enterprise-grade security with <span class="highlight">helmet and rate-limiting</span>,
+                implementing deep email validation and a privacy-first <strong>"Ghost Mode"</strong> for zero-trace
+                local messaging.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Enterprise Linux Storage Management with LVM</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/linux/migrate-varlog-to-a-separate-lvm-logical-volume/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Implemented <span class="highlight">Logical Volume Management (LVM)</span> to dynamically manage
+                server storage, creating scalable volume groups and logical volumes for flexible resource allocation.
+              </li>
+              <li>Executed critical system maintenance by migrating system directories like `/var/log` to dedicated
+                logical volumes, preventing <span class="highlight">root partition saturation</span> and ensuring server
+                stability.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Secure Multi-Protocol Remote Access with Cloudflare Tunnel</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/ssh-and-rdp-your-local-linux-machine-from-anywhere-with-cloudflare-tunnel/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Implemented <span class="highlight">Cloudflare Tunnel</span> to securely expose local Linux services
+                (SSH, RDP, Node.js) to the internet without opening inbound ports, ensuring zero-trust network security.
+              </li>
+              <li>Configured persistent <span class="highlight">systemd services</span> and secure ssh and rdp
+                connections to ensure high-availability connections for SSH and Remote Desktop (RDP) workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Multi-Environment Remote Desktop Infrastructure with XRDP</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/linux/install-the-different-desktop-environment-with-xrdp-in-ubuntu-server/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed <span class="highlight">XRDP</span> with 7 distinct Desktop Environments (KDE, GNOME, XFCE)
+                on a single Ubuntu server, enabling versatile, low-latency remote graphical access tailored to user
+                resource needs.</li>
+              <li>Engineered custom <span class="highlight">.xsession configuration</span> and systemd Display Manager
+                services to seamlessly manage user sessions and ensure secure, high-performance RDP connectivity.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Self-Hosted Cloud Collaboration Platform with Nextcloud AIO</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/how-to-install-nextcloud-aio-on-ubuntu-with-docker-and-a-domain"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed a secure, self-hosted <span class="highlight">Nextcloud All-in-One (AIO)</span> instance
+                using Docker on Ubuntu, ensuring complete data sovereignty and compliance as a private cloud
+                alternative.</li>
+              <li>Configured optimized <span class="highlight">Docker containers</span> for Nextcloud Office and Talk,
+                enabling real-time document collaboration and secure video conferencing behind an automated reverse
+                proxy.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">MySQL Master-Slave Replication for High Availability</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/database/setup-master-slave-replication-on-ubuntu"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Implemented <span class="highlight">MySQL Master-Slave replication</span> architecture on Ubuntu to
+                enable read scalability and database redundancy, offloading analytics queries to slave nodes.</li>
+              <li>Resolved critical authentication compatibility issues using <span
+                  class="highlight">mysql_native_password plugin</span>, ensuring secure and stable replication
+                connections across VPC networks.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Infrastructure as Code with Terraform on AWS</div>
+            <div class="project-link"><a href="https://blog.janakkumarshrestha0.com.np/posts/terraform/terraform-aws/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Provisioned <span class="highlight">AWS EC2 instances</span> and Security Groups using Terraform,
+                automating the deployment of scalable cloud infrastructure while adhering to Free Tier limits.</li>
+              <li>Configured <span class="highlight">SSH key pair authentication</span> and infrastructure output
+                variables to facilitate secure, immediate administrative access to provisioned resources.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Centralized Network Storage with NFS</div>
+            <div class="project-link"><a href="https://blog.janakkumarshrestha0.com.np/posts/linux/nfs/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed <span class="highlight">Network File System (NFS)</span> infrastructure to centralize storage
+                across multiple Linux servers, enabling seamless file sharing and collaborative access.</li>
+              <li>Configured secure NFS exports with granular <span class="highlight">access controls and firewall
+                  rules</span>, implementing network segmentation to restrict client access to trusted subnets.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Multi-Master Database Clustering with MariaDB Galera</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/database/mariadb-galera-cluster-guide"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Architected a multi-master <span class="highlight">MariaDB Galera Cluster</span> with synchronous
+                replication across three nodes, achieving zero-lag active-active database operations for
+                mission-critical applications.</li>
+              <li>Configured cluster-wide <span class="highlight">wsrep parameters and firewall rules</span> to ensure
+                fault tolerance, automatic node recovery, and seamless data consistency across distributed database
+                infrastructure.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Production WordPress Deployment with Docker & SSL</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/docker/hosting-wordpress-using-docker/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed production-ready <span class="highlight">WordPress with Docker Compose</span>, orchestrating
+                multi-container architecture with MariaDB backend and persistent volume management for data integrity.
+              </li>
+              <li>Configured <span class="highlight">Apache reverse proxy with Let's Encrypt SSL</span> automation,
+                implementing HTTPS encryption and certificate auto-renewal for secure web hosting.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Traditional LAMP Stack with WordPress & phpMyAdmin</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/linux/hosting-a-wordpress-site-in-debian/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed full-stack <span class="highlight">LAMP environment (Linux, Apache, MariaDB, PHP)</span> on
+                Debian, configuring Apache virtual hosts and phpMyAdmin for database administration.</li>
+              <li>Installed and configured <span class="highlight">WordPress CMS</span> with database integration,
+                implementing proper file permissions and directory structure for secure web hosting.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Cloud-Native Django Application Deployment on AWS EC2</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/django-deployment--ec2-virtual-environments-and-docker/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed production Django application on <span class="highlight">AWS EC2</span> using Python virtual
+                environments and Docker containerization, configuring security groups and network access controls.</li>
+              <li>Implemented <span class="highlight">multi-stage deployment strategy</span> with Docker image builds,
+                container orchestration, and background process management using nohup for continuous service
+                availability.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">High-Availability Load Balancing with AWS ALB & ACM</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/aws-application-load-balancer/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Architected highly available infrastructure using <span class="highlight">AWS Application Load
+                  Balancer</span> across multiple availability zones, implementing target groups and health checks for
+                fault-tolerant traffic distribution.</li>
+              <li>Configured end-to-end SSL/TLS encryption with <span class="highlight">AWS Certificate Manager
+                  (ACM)</span> and Cloudflare DNS validation, ensuring secure HTTPS communication and automated
+                certificate renewal.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Scalable Load Balancing with Nginx on AWS EC2</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/deploying-your-php-and-sql-app-on-an-aws-ec2-instance-with-a-custom-domain-copy"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Implemented <span class="highlight">Nginx reverse proxy load balancer</span> across multiple AWS EC2
+                instances, configuring upstream server groups with health checks for distributed traffic management.
+              </li>
+              <li>Configured <span class="highlight">security group rules and SSL termination</span> for secure
+                multi-instance architecture, enabling horizontal scaling and fault tolerance for containerized
+                applications.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Full-Stack PHP Application Deployment with Docker & Nginx</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/cloud/deploying-your-php-and-sql-app-on-an-aws-ec2-instance-with-a-custom-domain/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed containerized <span class="highlight">PHP/MySQL application on AWS EC2</span> using Docker
+                Compose, implementing reverse proxy architecture with Nginx for production-grade web hosting.</li>
+              <li>Configured automated <span class="highlight">SSL/TLS certificates with Let's Encrypt</span> (Certbot),
+                establishing secure HTTPS connections with custom domain integration and certificate auto-renewal.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Container Orchestration with Docker Compose for PHP Applications</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/docker/dockerize-a-php-application/"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Architected multi-container application using <span class="highlight">Docker Compose</span>,
+                orchestrating PHP/Apache web server and MariaDB database with persistent volume management and health
+                checks.</li>
+              <li>Implemented <span class="highlight">service networking and environment-based configuration</span> with
+                automated database initialization, enabling reproducible development environments and seamless container
+                lifecycle management.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Infrastructure as Code with Terraform on Azure</div>
+            <div class="project-link"><a href="https://blog.janakkumarshrestha0.com.np/posts/terraform/terraform-azure"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Provisioned Azure infrastructure using <span class="highlight">Terraform IaC</span>, automating VM
+                deployment with networking, security groups, and SSH key authentication through declarative
+                configuration.</li>
+              <li>Configured <span class="highlight">Azure service principal authentication</span> and resource group
+                management, implementing automated infrastructure lifecycle with init, plan, apply, and destroy
+                workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Hybrid Cloud Storage & Migration with AWS Storage Gateway</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/aws-storage-gateway-s3-file-gateway"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Deployed <span class="highlight">AWS Storage Gateway (S3 File Gateway)</span> to mount an NFS file
+                share on on-premises Linux servers, enabling seamless hybrid cloud storage and data migration to Amazon
+                S3.</li>
+              <li>Configured <span class="highlight">Cross-Region Replication</span> and S3 Lifecycle policies to
+                automate data redundancy and optimize storage costs.</li>
+            </ul>
+          </div>
+        </article>
+
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Deploying Scalable Relational Database Infrastructure</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/deploying-a-scalable-relational-database-infrastructure-on-aws-ec2-using-terraform"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Provisioned a high-availability <span class="highlight">MySQL</span> instance on Amazon RDS within a
+                secure VPC environment.</li>
+              <li>Implemented robust security controls using <span class="highlight">AWS Secrets Manager</span> for
+                automated credential management and secure application connectivity.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Enterprise Database Migration & Modernization</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/database/enterprise-database-migration-and-modernization"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Executed a zero-data-loss migration of a legacy MariaDB system to <span class="highlight">Amazon
+                  RDS</span> using custom dump strategies.</li>
+              <li>Re-architected the application layer to utilize managed database services, significantly reducing
+                operational overhead and improving reliability.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Architecting a Secure Virtual Private Cloud (VPC)</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/architecting-a-secure-virtual-private-cloud-vpc-on-aws-ec2-using-terraform"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Engineered a custom <span class="highlight">Amazon VPC</span> architecture with segmented public and
+                private subnets to enforce granular network security boundaries.</li>
+              <li>Configured <span class="highlight">Internet Gateways</span> and Route Tables to establish secure
+                connectivity for public-facing application servers while isolating private resources.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Establishing Secure Inter-VPC Peering & Network Monitoring</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/establishing-secure-inter-vpc-peering-and-network-monitoring-on-aws-ec2-using-terraform"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Established private, low-latency connectivity between isolated <span class="highlight">Amazon
+                  VPCs</span> using Peering Connections to enable secure cross-network data transfer without internet
+                exposure.</li>
+              <li>Implemented <span class="highlight">VPC Flow Logs</span> and configured complex Route Tables to audit
+                traffic patterns and validate secure communication channels between application and database tiers.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Architecting Scalable & Highly Available Web Infrastructure</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/architecting-scalable-and-highly-available-web-infrastructure-on-aws-ec2-using-terraform"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Designed a fault-tolerant Multi-AZ architecture using <span class="highlight">Auto Scaling
+                  Groups</span> and Application Load Balancers to ensure high availability for mission-critical web
+                applications.</li>
+              <li>Configured dynamic scaling policies driven by <span class="highlight">CloudWatch</span> CPU
+                utilization metrics to automatically adjust compute capacity, optimizing performance and cost-efficiency
+                under fluctuating traffic.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Infrastructure as Code Automation with AWS CloudFormation</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/infrastructure-as-code-automation-with-aws-cloudformation"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Automated the deployment of multi-tier infrastructure (VPC, Application) using layered <span
+                  class="highlight">AWS CloudFormation</span> templates to ensure consistent, repeatable environments.
+              </li>
+              <li>Managed full stack lifecycles including updates and deletion policies to retain critical data (EBS
+                Snapshots) upon stack termination.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Automating Multi-Region Infrastructure with CI/CD & IaC</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/automating-multi-region-infrastructure-with-ci-cd-and-iac-on-aws-ec2-using-terraform-and-cloudformation"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Developed modular <span class="highlight">CloudFormation</span> templates to provision replicable
+                network and application layers, establishing a robust Infrastructure as Code (IaC) foundation.</li>
+              <li>Implemented a continuous delivery pipeline using <span class="highlight">AWS CodePipeline</span> and
+                CodeCommit to automate stack updates and enable seamless multi-region deployments.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Architecting Decoupled Event-Driven Applications</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/architecting-decoupled-event-driven-applications-on-aws-ec2-using-terraform-and-cloudformation"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Refactored a tightly coupled monolithic application into a decoupled microservices architecture using
+                <span class="highlight">Amazon SQS</span> and <span class="highlight">Amazon SNS</span> to improve
+                scalability and fault tolerance.
+              </li>
+              <li>Configured event-driven workflows triggered by <span class="highlight">Amazon S3</span> uploads and
+                implemented efficient message polling mechanisms to process asynchronous image processing tasks.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="item-header">
+            <div class="org-name">Building Scalable Serverless Architectures on AWS</div>
+            <div class="project-link"><a
+                href="https://blog.janakkumarshrestha0.com.np/posts/aws/building-scalable-serverless-architectures-on-aws-ec2-using-terraform-and-cloudformation"
+                target="_blank">Project Link</a></div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Built a fully serverless inventory tracking system using <span class="highlight">AWS Lambda</span>
+                triggered by <span class="highlight">Amazon S3</span> events to automatically process and ingest data
+                into <span class="highlight">Amazon DynamoDB</span>.</li>
+              <li>Integrated <span class="highlight">Amazon SNS</span> for real-time low-stock notifications and
+                visualized data via a serverless dashboard, eliminating server management overhead and optimizing costs.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section aria-label="Education">
+        <h2>Education</h2>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">JMC College affiliated with TU</div>
+            <div class="date-range">Kathmandu, Nepal • 2020 — 2025</div>
+          </div>
+          <div class="role-title">Bachelor in Computer Applications</div>
+          <div class="details">
+            <ul>
+              <li>
+                Completed 3 major projects:
+                <span class="highlight">Dictionary application</span>, Pong 2D
+                Android game, and HAMRO BANK: a signature forgery detection
+                system using machine learning for banking security.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="item-header">
+            <div class="org-name">Pentagon International College</div>
+            <div class="date-range">Kathmandu, Nepal • 2018 — 2019</div>
+          </div>
+          <div class="role-title">Higher Secondary Education</div>
+          <div class="details">
+            <ul>
+              <li>
+                Studied in
+                <span class="highlight">Science (Physical Group)</span> with a
+                focus on Physics and Mathematics.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section aria-label="Certifications" class="certifications-section">
+        <h2>Certifications & Badges</h2>
+        <div class="certifications-grid">
+          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/93618f9d68d845429898500e3797656f"
+            target="_blank" class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">
+                AWS Certified Solutions Architect – Associate (SAA-C03)
+              </div>
+              <div class="cert-issuer">AWS</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/be4e8bf6-af80-44ff-a5ff-797c429e404a/public_url" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">
+                AWS Academy Graduate - Cloud Foundations - Training Badge
+              </div>
+              <div class="cert-issuer">AWS</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/05fd91ce-6a2e-4bd1-9d8e-dc3b89761778/public_url" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">
+                AWS Academy Graduate - Cloud Security Foundations - Training
+                Badge
+              </div>
+              <div class="cert-issuer">AWS</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/6aeca1eb-8c9d-48ba-8074-2e4febacf874/public_url" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">
+                AWS Educate Getting Started with Networking - Training Badge
+              </div>
+              <div class="cert-issuer">AWS</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/84f3110f-cc33-4489-9ded-690ee56061e7/public_url" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">LFS101: Introduction to Linux</div>
+              <div class="cert-issuer">Linux Foundation</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.credly.com/badges/07d51d9d-51ee-4987-a22f-ac95284ac3a4/public_url" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">Networking Basics</div>
+              <div class="cert-issuer">Cisco</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1yhQw2x8o06InOiiMUJC1Y_xiYZt-EXTG/view" target="_blank"
+            class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">DevOps Engineer</div>
+              <div class="cert-issuer">Broadway Infosys</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.virtualbadge.io/certificate-validator?credential=3de3dac8-ca6f-4259-8b86-0870186b67b3"
+            target="_blank" class="cert-item">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+            <div class="cert-content">
+              <div class="cert-title">Full Stack Development</div>
+              <div class="cert-issuer">Mino</div>
+            </div>
+            <div class="cert-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labeScriptingl="Additional Information">
+        <h2>Additional Information</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Profiles</h3>
+            <div class="connect-grid-compact">
+              <a href="http://www.linkedin.com/in/janakkss/" target="_blank" class="connect-item connect-item-compact">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/janak0ff" target="_blank" class="connect-item connect-item-compact">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02a9.68 9.68 0 0 1 2.5-.34c.84.01 1.69.12 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.credly.com/users/janak0ff" target="_blank" class="connect-item connect-item-compact">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                </svg>
+                <span>Credly</span>
+              </a>
+              <a href="https://blog.janakkumarshrestha0.com.np/" target="_blank"
+                class="connect-item connect-item-compact">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H9v-2h6v2zm0-5H9v-2h6v2zm0-5H9V6h6v2z" />
+                </svg>
+                <span>Blog Website</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Awards</h3>
+            <ul class="compact-list">
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <span>MSS Science exhibution 2074</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <span>2nd place in quiz competition - AWS Secure the Cloud Event
+                  2025</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="IT Skills" class="connect-section">
+        <h2>IT Skills</h2>
+        <div class="skill-category transparent">
+          <ul class="skill-list">
+            <li class="skill-tag">Tmux</li>
+            <li class="skill-tag">Git</li>
+            <li class="skill-tag">Linux</li>
+            <li class="skill-tag">Docker & K8s</li>
+            <li class="skill-tag">Database Operation</li>
+            <li class="skill-tag">Web Hosting</li>
+            <li class="skill-tag">DNS Management</li>
+            <li class="skill-tag">SSL/TLS Certificate</li>
+            <li class="skill-tag">CI/CD</li>
+            <li class="skill-tag">Jenkins</li>
+            <li class="skill-tag">Github Actions</li>
+            <li class="skill-tag">Ansible</li>
+            <li class="skill-tag">Terraform</li>
+            <li class="skill-tag">Bash Scripting</li>
+            <li class="skill-tag">Zabbix</li>
+            <li class="skill-tag">Nextcloud</li>
+            <li class="skill-tag">NFS & LVM</li>
+            <li class="skill-tag">Server Management</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-label="References">
+        <h2>References</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Joseph Lama</h3>
+            <p style="margin-bottom: 0.5rem; color: var(--text-light)">
+              Senior DevOps Engineer at Khalti
+            </p>
+            <div class="contact-info" style="
+                  margin-top: 0;
+                  justify-content: flex-start;
+                  flex-direction: column;
+                  gap: 0.5rem;
+                  align-items: flex-start;
+                ">
+              <div class="contact-item" style="font-size: 0.9rem; color: var(--primary-color)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+                <a href="mailto:josephlama989@gmail.com" style="color: var(--primary-color)">josephlama989@gmail.com</a>
+              </div>
+              <div class="contact-item" style="font-size: 0.9rem; color: var(--primary-color)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>+977-9801856310</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Rojan Sedhai</h3>
+            <p style="margin-bottom: 0.5rem; color: var(--text-light)">
+              AWS Solutions Architect/Cloud Trainer at Adex
+            </p>
+            <div class="contact-info" style="
+                  margin-top: 0;
+                  justify-content: flex-start;
+                  flex-direction: column;
+                  gap: 0.5rem;
+                  align-items: flex-start;
+                ">
+              <div class="contact-item" style="font-size: 0.9rem; color: var(--primary-color)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+                <a href="mailto:rojansedhai01@gmail.com" style="color: var(--primary-color)">rojansedhai01@gmail.com</a>
+              </div>
+              <div class="contact-item" style="font-size: 0.9rem; color: var(--primary-color)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>+977-9702036160</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Last updated: January 2026</p>
+    </footer>
+  </div>
+</body>
+
+</html>

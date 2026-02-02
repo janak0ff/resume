@@ -656,59 +656,82 @@
   </button>
 
   <script>
-    function downloadPDF() {
+    async function downloadPDF() {
       const element = document.querySelector('.resume-container');
       const button = document.querySelector('.fab-print');
       const footer = document.querySelector('footer');
-      const body = document.body;
 
-      // Store original styles
-      const originalBodyPadding = body.style.padding;
-      const originalBodyBackground = body.style.background;
-      const originalContainerMargin = element.style.margin;
-      const originalContainerBoxShadow = element.style.boxShadow;
-      const originalContainerBorderRadius = element.style.borderRadius;
+      // Scroll to top to ensure proper capture
+      window.scrollTo(0, 0);
 
-      // Hide button and footer during PDF generation
+      // Hide elements that shouldn't be in PDF
       button.style.display = 'none';
       if (footer) footer.style.display = 'none';
 
-      // Temporarily adjust styles for clean PDF
-      body.style.padding = '0';
-      body.style.background = 'white';
+      // Store and modify styles temporarily
+      const originalStyles = {
+        bodyPadding: document.body.style.padding,
+        bodyMargin: document.body.style.margin,
+        bodyBg: document.body.style.background,
+        containerMargin: element.style.margin,
+        containerShadow: element.style.boxShadow,
+        containerRadius: element.style.borderRadius,
+        containerMaxWidth: element.style.maxWidth
+      };
+
+      // Apply PDF-friendly styles
+      document.body.style.padding = '0';
+      document.body.style.margin = '0';
+      document.body.style.background = 'white';
       element.style.margin = '0';
       element.style.boxShadow = 'none';
       element.style.borderRadius = '0';
+      element.style.maxWidth = 'none';
+
+      // Small delay to let styles apply
+      await new Promise(resolve => setTimeout(resolve, 100));
 
       const opt = {
-        margin: [0, 0, 0, 0],
+        margin: [20, 10, 15, 10],
         filename: 'Janak_Kumar_Shrestha_Resume.pdf',
-        image: { type: 'jpeg', quality: 1 },
+        image: { type: 'jpeg', quality: 0.98 },
         html2canvas: {
           scale: 2,
           useCORS: true,
-          letterRendering: true,
           logging: false,
-          backgroundColor: '#ffffff'
+          backgroundColor: '#ffffff',
+          scrollY: -window.scrollY,
+          scrollX: 0
         },
         jsPDF: {
           unit: 'mm',
           format: 'a4',
           orientation: 'portrait'
         },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        pagebreak: {
+          mode: ['avoid-all', 'css', 'legacy'],
+          avoid: ['article', 'section']
+        }
       };
 
-      html2pdf().set(opt).from(element).save().then(() => {
-        // Restore all original styles
-        button.style.display = 'flex';
-        if (footer) footer.style.display = 'block';
-        body.style.padding = originalBodyPadding;
-        body.style.background = originalBodyBackground;
-        element.style.margin = originalContainerMargin;
-        element.style.boxShadow = originalContainerBoxShadow;
-        element.style.borderRadius = originalContainerBorderRadius;
-      });
+      try {
+        await html2pdf().set(opt).from(element).save();
+      } catch (err) {
+        console.error('PDF generation failed:', err);
+        alert('PDF generation failed. Please try again.');
+      }
+
+      // Restore all original styles
+      document.body.style.padding = originalStyles.bodyPadding;
+      document.body.style.margin = originalStyles.bodyMargin;
+      document.body.style.background = originalStyles.bodyBg;
+      element.style.margin = originalStyles.containerMargin;
+      element.style.boxShadow = originalStyles.containerShadow;
+      element.style.borderRadius = originalStyles.containerRadius;
+      element.style.maxWidth = originalStyles.containerMaxWidth;
+
+      button.style.display = 'flex';
+      if (footer) footer.style.display = 'block';
     }
   </script>
 

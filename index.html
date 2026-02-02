@@ -644,13 +644,73 @@
 </head>
 
 <body>
-  <!-- Print Button -->
-  <button class="fab-print" onclick="window.print()" aria-label="Print Resume">
+  <!-- html2pdf.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <!-- Download PDF Button -->
+  <button class="fab-print" onclick="downloadPDF()" aria-label="Download Resume as PDF">
     <svg viewBox="0 0 24 24">
       <path
         d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
     </svg>
   </button>
+
+  <script>
+    function downloadPDF() {
+      const element = document.querySelector('.resume-container');
+      const button = document.querySelector('.fab-print');
+      const footer = document.querySelector('footer');
+      const body = document.body;
+
+      // Store original styles
+      const originalBodyPadding = body.style.padding;
+      const originalBodyBackground = body.style.background;
+      const originalContainerMargin = element.style.margin;
+      const originalContainerBoxShadow = element.style.boxShadow;
+      const originalContainerBorderRadius = element.style.borderRadius;
+
+      // Hide button and footer during PDF generation
+      button.style.display = 'none';
+      if (footer) footer.style.display = 'none';
+
+      // Temporarily adjust styles for clean PDF
+      body.style.padding = '0';
+      body.style.background = 'white';
+      element.style.margin = '0';
+      element.style.boxShadow = 'none';
+      element.style.borderRadius = '0';
+
+      const opt = {
+        margin: [0, 0, 0, 0],
+        filename: 'Janak_Kumar_Shrestha_Resume.pdf',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          letterRendering: true,
+          logging: false,
+          backgroundColor: '#ffffff'
+        },
+        jsPDF: {
+          unit: 'mm',
+          format: 'a4',
+          orientation: 'portrait'
+        },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+
+      html2pdf().set(opt).from(element).save().then(() => {
+        // Restore all original styles
+        button.style.display = 'flex';
+        if (footer) footer.style.display = 'block';
+        body.style.padding = originalBodyPadding;
+        body.style.background = originalBodyBackground;
+        element.style.margin = originalContainerMargin;
+        element.style.boxShadow = originalContainerBoxShadow;
+        element.style.borderRadius = originalContainerBorderRadius;
+      });
+    }
+  </script>
 
   <div class="resume-container">
     <header>

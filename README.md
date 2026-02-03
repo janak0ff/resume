@@ -1,1 +1,1 @@
-https://resume.janakkumarshrestha0.com.np
+resume.janakkumarshrestha0.com.np

@@ -376,10 +376,11 @@
 
     /* Articles (Experience/Education Items) */
     .project-link a {
-      font-size: 0.9rem;
+      font-size: 0.7rem !important;
       color: var(--accent-color);
       text-decoration: none;
-      font-weight: 500;
+      /* font-weight: 500; */
+      font-style: italic;
     }
 
     .project-link a:hover {
@@ -824,33 +825,15 @@
           <div class="details">
             <ul>
               <li>
-                Completed comprehensive AWS Academy Cloud Architecting program
-                covering <span class="highlight">16 modules</span> including
-                compute, storage, databases, networking, security, and
-                serverless architectures aligned with the AWS Well-Architected
-                Framework.
+                Completed AWS Academy Cloud Architecting program covering
+                <span class="highlight">16 modules</span> — compute, storage, networking,
+                security, and serverless — aligned with the AWS Well-Architected Framework,
+                with hands-on labs using EC2, S3, RDS, VPC, Lambda, and CloudFormation.
               </li>
               <li>
-                Designed and implemented
-                <span class="highlight">scalable, highly available solutions</span>
-                through hands-on labs involving Amazon EC2, S3, RDS, VPC,
-                Lambda, and CloudFormation, demonstrating proficiency in
-                building production-grade AWS architectures.
-              </li>
-              <li>
-                Automated infrastructure deployment using
-                <span class="highlight">AWS CloudFormation</span> and built
-                decoupled serverless applications with Lambda, API Gateway,
-                and SQS, reducing manual provisioning efforts and improving
-                system resilience.
-              </li>
-              <li>
-                Successfully completed capstone project and course assessment,
-                applying
-                <span class="highlight">disaster recovery patterns</span>,
-                cost optimization strategies, and security best practices
-                including IAM policies, encryption, and VPC security
-                configurations.
+                Automated infrastructure with <span class="highlight">AWS CloudFormation</span>
+                and built serverless pipelines using Lambda, API Gateway, and SQS, applying
+                disaster recovery patterns, IAM security, and cost optimization strategies.
               </li>
             </ul>
           </div>
@@ -867,38 +850,16 @@
           <div class="details">
             <ul>
               <li>
-                Monitored datacenter infrastructure using
-                <span class="highlight">Zabbix monitoring system</span>,
-                tracking server health, resource utilization, and system
-                performance metrics to ensure optimal uptime and proactive
-                issue detection.
+                Monitored datacenter infrastructure using <span class="highlight">Zabbix</span>,
+                managed VMs and VPC configurations across cloud platforms, and scaled
+                <span class="highlight">CPU, memory, and disk resources</span> with NFS
+                and LVM storage solutions to meet client SLAs.
               </li>
               <li>
-                Managed cloud resources including
-                <span class="highlight">virtual machines and VPC configurations</span>
-                across multiple cloud platforms, provisioning and maintaining
-                client environments in accordance with service level
-                agreements.
-              </li>
-              <li>
-                Performed compute resource upgrades on client VMs, scaling
-                <span class="highlight">CPU, memory, and disk resources</span>
-                based on performance requirements, and configured NFS and LVM
-                storage solutions for enhanced data management.
-              </li>
-              <li>
-                Worked with enterprise datacenter infrastructure including
-                <span class="highlight">Pure Storage flash arrays</span>,
-                VMware ESXi hypervisors, Fortigate firewalls, and host units,
-                gaining hands-on experience with the underlying components
-                powering cloud services.
-              </li>
-              <li>
-                Provided
-                <span class="highlight">customer support and system troubleshooting</span>
-                as a system administrator, resolving technical issues,
-                responding to service requests, and maintaining system
-                stability in a datacenter environment.
+                Administered enterprise infrastructure including
+                <span class="highlight">Pure Storage arrays</span>, VMware ESXi, and
+                Fortigate firewalls, while providing system troubleshooting and customer
+                support to maintain datacenter stability.
               </li>
             </ul>
           </div>
@@ -915,29 +876,14 @@
           <div class="details">
             <ul>
               <li>
-                Covering Linux fundamentals, networking, cryptography, source
-                control management (Git), RDBMS, establishing a strong
-                foundation in DevOps prerequisites and best practices.
+                Built a strong DevOps foundation covering Linux, networking, Git, and RDBMS,
+                with hands-on experience in <span class="highlight">Docker and Kubernetes</span>,
+                multi-container apps, and CI/CD pipelines using Jenkins.
               </li>
               <li>
-                Hands-on experience with containerization and orchestration
-                technologies including
-                <span class="highlight">Docker and Kubernetes</span>, building
-                multi-container applications with Docker Compose, managing
-                pods and deployments, and implementing CI/CD pipelines with
-                Jenkins for automated application delivery.
-              </li>
-              <li>
-                Automated infrastructure provisioning using
-                <span class="highlight">Ansible playbooks</span> and
-                Infrastructure as Code (IaC) with Terraform, reducing manual
-                configuration efforts and ensuring consistent environments.
-              </li>
-              <li>
-                Gained hands-on experience with
-                <span class="highlight">AWS cloud services</span> including
-                EC2, VPC, S3, Load Balancers, and IAM policies and deploying
-                scalable applications.
+                Automated infrastructure provisioning with <span class="highlight">Ansible
+                  and Terraform</span>, and deployed scalable applications on AWS using
+                EC2, VPC, S3, Load Balancers, and IAM.
               </li>
             </ul>
           </div>
@@ -948,26 +894,25 @@
 
         <article>
           <div class="item-header">
-            <div class="org-name">Centralized Infrastructure Monitoring & Alerting System</div>
+            <div class="org-name">Centralized Monitoring, Logging & Alerting System</div>
             <div class="project-link"><a href="https://github.com/janak0ff/observability" target="_blank">Project
                 Link</a></div>
           </div>
           <div class="details">
             <ul>
-              <li>Built a <span class="highlight">client-server observability platform</span> using Prometheus, Grafana,
-                Loki, and Alertmanager — fully Dockerized with centralized <span class="highlight">.env</span>-driven
-                configuration for rapid multi-node deployment.</li>
-              <li>Implemented <span class="highlight">intelligent email alerting</span> for critical events (high CPU,
-                memory, disk usage, node failure, container crashes) with automatic <span class="highlight">firing and
-                  resolved</span> notifications via Alertmanager.</li>
-              <li>Integrated <span class="highlight">AWS S3</span> for scalable log storage, <span class="highlight">EC2
-                  Service Discovery</span> for automated target onboarding, and multiple metric exporters (Node,
-                cAdvisor, Nginx, MongoDB, Jenkins) with pre-provisioned Grafana dashboards.</li>
+              <li>
+                Built a Dockerized <span class="highlight">client-server observability platform</span>
+                using Prometheus, Grafana, Loki, and Alertmanager with centralized
+                .env-driven config for rapid multi-node deployment.
+              </li>
+              <li>
+                Implemented <span class="highlight">intelligent email alerting</span> for critical events,
+                integrated AWS S3 for log storage, EC2 Service Discovery for automated target onboarding,
+                and multiple exporters (Node, cAdvisor, Nginx, MongoDB, Jenkins) with pre-built Grafana dashboards.
+              </li>
             </ul>
           </div>
         </article>
-
-
 
         <article>
           <div class="item-header">
@@ -976,32 +921,14 @@
           </div>
           <div class="details">
             <ul>
-              <li>Architected and deployed an automated CI/CD pipeline using a <span class="highlight">Jenkins
-                  server</span> to streamline the build and deployment process of a complete MERN stack application.
-              </li>
-              <li>Configured an <span class="highlight">Nginx server</span> as a reverse proxy to manage incoming
-                traffic, ensuring secure and high-performance delivery of the application.</li>
+              <li>Automated CI/CD pipeline using <span class="highlight">Jenkins</span> to build and deploy a MERN stack
+                app, with <span class="highlight">Nginx</span> as a reverse proxy for secure, high-performance traffic
+                management.</li>
             </ul>
           </div>
         </article>
 
-        <article>
-          <div class="item-header">
-            <div class="org-name">Infrastructure Monitoring and Logging Observability</div>
-            <div class="project-link"><a href="#" target="_blank">Project Link</a></div>
-          </div>
-          <div class="details">
-            <ul>
-              <li>Deployed a full-stack observability platform utilizing <span class="highlight">Prometheus</span> and
-                <span class="highlight">Grafana</span> for real-time infrastructure monitoring and proactive performance
-                visualization.
-              </li>
-              <li>Integrated <span class="highlight">Grafana Loki</span> and <span class="highlight">Alloy</span> for
-                centralized log aggregation, alongside <span class="highlight">Alertmanager</span> for automated
-                incident routing and critical alerts.</li>
-            </ul>
-          </div>
-        </article>
+
 
         <article>
           <div class="item-header">
@@ -1011,12 +938,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>A quickmail service built by learning gmail smtp with Mern Stack, containerized via Docker multi-stage
-                builds. It offers flexible persistence with support for both <span class="highlight">MongoDB
-                  Atlas</span> and <span class="highlight">local MongoDB</span>.</li>
-              <li>Security is paramount with enterprise-grade protection (helmet, rate-limiting) and deep email
-                validation. Uniquely, <span class="highlight">"Ghost Mode"</span> enables zero-trace client-side
-                messaging for maximum privacy.</li>
+              <li>Built a Dockerized MERN email service with Gmail SMTP, enterprise-grade security (helmet,
+                rate-limiting), flexible <span class="highlight">MongoDB</span> persistence, and a unique <span
+                  class="highlight">"Ghost Mode"</span> for zero-trace messaging.</li>
             </ul>
           </div>
         </article>
@@ -1030,11 +954,8 @@
           </div>
           <div class="details">
             <ul>
-              <li>Implemented <span class="highlight">Logical Volume Management (LVM)</span> to dynamically manage
-                server storage, creating scalable volume groups and logical volumes for flexible resource allocation.
-              </li>
-              <li>Executed critical system maintenance by migrating system directories like `/var/log` to dedicated
-                logical volumes, preventing <span class="highlight">root partition saturation</span> and ensuring server
+              <li>Implemented <span class="highlight">LVM</span> to dynamically manage server storage, migrating
+                `/var/log` to a dedicated logical volume to prevent root partition saturation and ensure system
                 stability.</li>
             </ul>
           </div>
@@ -1049,11 +970,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Implemented <span class="highlight">Cloudflare Tunnel</span> to securely expose local Linux services
-                (SSH, RDP, Node.js) to the internet without opening inbound ports, ensuring zero-trust network security.
-              </li>
-              <li>Configured persistent <span class="highlight">systemd services</span> and secure ssh and rdp
-                connections to ensure high-availability connections for SSH and Remote Desktop (RDP) workflows.</li>
+              <li>Configured <span class="highlight">Cloudflare Tunnel</span> with persistent systemd services to
+                securely expose SSH, RDP, and Node.js services without open inbound ports, enforcing zero-trust network
+                access.</li>
             </ul>
           </div>
         </article>
@@ -1067,11 +986,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed <span class="highlight">XRDP</span> with 7 distinct Desktop Environments (KDE, GNOME, XFCE)
-                on a single Ubuntu server, enabling versatile, low-latency remote graphical access tailored to user
-                resource needs.</li>
-              <li>Engineered custom <span class="highlight">.xsession configuration</span> and systemd Display Manager
-                services to seamlessly manage user sessions and ensure secure, high-performance RDP connectivity.</li>
+              <li>Deployed <span class="highlight">XRDP</span> with 7 desktop environments (KDE, GNOME, XFCE) on a
+                single Ubuntu server, using custom <span class="highlight">.xsession configs</span> for secure,
+                low-latency remote graphical access.</li>
             </ul>
           </div>
         </article>
@@ -1085,12 +1002,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed a secure, self-hosted <span class="highlight">Nextcloud All-in-One (AIO)</span> instance
-                using Docker on Ubuntu, ensuring complete data sovereignty and compliance as a private cloud
-                alternative.</li>
-              <li>Configured optimized <span class="highlight">Docker containers</span> for Nextcloud Office and Talk,
-                enabling real-time document collaboration and secure video conferencing behind an automated reverse
-                proxy.</li>
+              <li>Deployed <span class="highlight">Nextcloud AIO</span> on Docker with Office and Talk containers behind
+                an automated reverse proxy, enabling self-hosted document collaboration and secure video conferencing.
+              </li>
             </ul>
           </div>
         </article>
@@ -1104,11 +1018,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Implemented <span class="highlight">MySQL Master-Slave replication</span> architecture on Ubuntu to
-                enable read scalability and database redundancy, offloading analytics queries to slave nodes.</li>
-              <li>Resolved critical authentication compatibility issues using <span
-                  class="highlight">mysql_native_password plugin</span>, ensuring secure and stable replication
-                connections across VPC networks.</li>
+              <li>Implemented <span class="highlight">MySQL Master-Slave replication</span> for read scalability and
+                redundancy, resolving authentication issues with the native password plugin for stable cross-VPC
+                replication.</li>
             </ul>
           </div>
         </article>
@@ -1122,10 +1034,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Provisioned <span class="highlight">AWS EC2 instances</span> and Security Groups using Terraform,
-                automating the deployment of scalable cloud infrastructure while adhering to Free Tier limits.</li>
-              <li>Configured <span class="highlight">SSH key pair authentication</span> and infrastructure output
-                variables to facilitate secure, immediate administrative access to provisioned resources.</li>
+              <li>Provisioned <span class="highlight">AWS EC2 instances</span> and security groups with Terraform,
+                automating SSH key pair authentication and infrastructure outputs for immediate, secure administrative
+                access.</li>
             </ul>
           </div>
         </article>
@@ -1138,10 +1049,8 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed <span class="highlight">Network File System (NFS)</span> infrastructure to centralize storage
-                across multiple Linux servers, enabling seamless file sharing and collaborative access.</li>
-              <li>Configured secure NFS exports with granular <span class="highlight">access controls and firewall
-                  rules</span>, implementing network segmentation to restrict client access to trusted subnets.</li>
+              <li>Deployed <span class="highlight">NFS</span> infrastructure to centralize storage across Linux servers
+                with granular access controls and firewall rules restricting client access to trusted subnets.</li>
             </ul>
           </div>
         </article>
@@ -1155,12 +1064,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Architected a multi-master <span class="highlight">MariaDB Galera Cluster</span> with synchronous
-                replication across three nodes, achieving zero-lag active-active database operations for
-                mission-critical applications.</li>
-              <li>Configured cluster-wide <span class="highlight">wsrep parameters and firewall rules</span> to ensure
-                fault tolerance, automatic node recovery, and seamless data consistency across distributed database
-                infrastructure.</li>
+              <li>Architected a 3-node <span class="highlight">MariaDB Galera Cluster</span> with synchronous
+                active-active replication and wsrep/firewall configurations for automatic node recovery and zero-lag
+                data consistency.</li>
             </ul>
           </div>
         </article>
@@ -1174,11 +1080,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed production-ready <span class="highlight">WordPress with Docker Compose</span>, orchestrating
-                multi-container architecture with MariaDB backend and persistent volume management for data integrity.
-              </li>
-              <li>Configured <span class="highlight">Apache reverse proxy with Let's Encrypt SSL</span> automation,
-                implementing HTTPS encryption and certificate auto-renewal for secure web hosting.</li>
+              <li>Deployed <span class="highlight">WordPress with Docker Compose</span> and a MariaDB backend,
+                configured behind an Apache reverse proxy with automated <span class="highlight">Let's Encrypt
+                  SSL</span> renewal.</li>
             </ul>
           </div>
         </article>
@@ -1187,15 +1091,13 @@
           <div class="item-header">
             <div class="org-name">Traditional LAMP Stack with WordPress & phpMyAdmin</div>
             <div class="project-link"><a
-                href="https://blog.janakkumarshrestha0.com.np/posts/installation-of-lamp-along-with-phpmyadmin-on-debian-in-simple-steps/"
+                href="https://blog.janakkumarshrestha0.com.np/posts/installation-of-lamp-along-with-phpmyadmin-on-ubuntu-in-simple-steps/"
                 target="_blank">Project Link</a></div>
           </div>
           <div class="details">
             <ul>
-              <li>Deployed full-stack <span class="highlight">LAMP environment (Linux, Apache, MariaDB, PHP)</span> on
-                Debian, configuring Apache virtual hosts and phpMyAdmin for database administration.</li>
-              <li>Installed and configured <span class="highlight">WordPress CMS</span> with database integration,
-                implementing proper file permissions and directory structure for secure web hosting.</li>
+              <li>Deployed a full <span class="highlight">LAMP stack</span> on Debian with Apache virtual hosts,
+                phpMyAdmin, and WordPress CMS with proper file permissions for secure web hosting.</li>
             </ul>
           </div>
         </article>
@@ -1209,11 +1111,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed production Django application on <span class="highlight">AWS EC2</span> using Python virtual
-                environments and Docker containerization, configuring security groups and network access controls.</li>
-              <li>Implemented <span class="highlight">multi-stage deployment strategy</span> with Docker image builds,
-                container orchestration, and background process management using nohup for continuous service
-                availability.</li>
+              <li>Deployed a Django app on <span class="highlight">AWS EC2</span> using Docker with a multi-stage build
+                strategy, security group configuration, and nohup-based process management for continuous availability.
+              </li>
             </ul>
           </div>
         </article>
@@ -1227,12 +1127,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Architected highly available infrastructure using <span class="highlight">AWS Application Load
-                  Balancer</span> across multiple availability zones, implementing target groups and health checks for
-                fault-tolerant traffic distribution.</li>
-              <li>Configured end-to-end SSL/TLS encryption with <span class="highlight">AWS Certificate Manager
-                  (ACM)</span> and Cloudflare DNS validation, ensuring secure HTTPS communication and automated
-                certificate renewal.</li>
+              <li>Architected a Multi-AZ infrastructure with <span class="highlight">AWS ALB</span> and end-to-end SSL
+                via <span class="highlight">AWS Certificate Manager</span> and Cloudflare DNS for fault-tolerant, secure
+                traffic distribution.</li>
             </ul>
           </div>
         </article>
@@ -1246,12 +1143,8 @@
           </div>
           <div class="details">
             <ul>
-              <li>Implemented <span class="highlight">Nginx reverse proxy load balancer</span> across multiple AWS EC2
-                instances, configuring upstream server groups with health checks for distributed traffic management.
-              </li>
-              <li>Configured <span class="highlight">security group rules and SSL termination</span> for secure
-                multi-instance architecture, enabling horizontal scaling and fault tolerance for containerized
-                applications.</li>
+              <li>Configured <span class="highlight">Nginx</span> as a reverse proxy load balancer across AWS EC2
+                instances with SSL termination and security group rules for horizontal scaling and fault tolerance.</li>
             </ul>
           </div>
         </article>
@@ -1265,10 +1158,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed containerized <span class="highlight">PHP/MySQL application on AWS EC2</span> using Docker
-                Compose, implementing reverse proxy architecture with Nginx for production-grade web hosting.</li>
-              <li>Configured automated <span class="highlight">SSL/TLS certificates with Let's Encrypt</span> (Certbot),
-                establishing secure HTTPS connections with custom domain integration and certificate auto-renewal.</li>
+              <li>Deployed a containerized <span class="highlight">PHP/MySQL app on AWS EC2</span> with Docker Compose,
+                Nginx reverse proxy, and automated <span class="highlight">Let's Encrypt SSL</span> with custom domain
+                integration.</li>
             </ul>
           </div>
         </article>
@@ -1282,12 +1174,9 @@
           </div>
           <div class="details">
             <ul>
-              <li>Architected multi-container application using <span class="highlight">Docker Compose</span>,
-                orchestrating PHP/Apache web server and MariaDB database with persistent volume management and health
-                checks.</li>
-              <li>Implemented <span class="highlight">service networking and environment-based configuration</span> with
-                automated database initialization, enabling reproducible development environments and seamless container
-                lifecycle management.</li>
+              <li>Architected a multi-container <span class="highlight">PHP/MariaDB app with Docker Compose</span>,
+                implementing service networking, persistent volumes, health checks, and automated database
+                initialization.</li>
             </ul>
           </div>
         </article>
@@ -1301,12 +1190,8 @@
           </div>
           <div class="details">
             <ul>
-              <li>Provisioned Azure infrastructure using <span class="highlight">Terraform IaC</span>, automating VM
-                deployment with networking, security groups, and SSH key authentication through declarative
-                configuration.</li>
-              <li>Configured <span class="highlight">Azure service principal authentication</span> and resource group
-                management, implementing automated infrastructure lifecycle with init, plan, apply, and destroy
-                workflows.</li>
+              <li>Provisioned Azure VMs using <span class="highlight">Terraform IaC</span> with service principal
+                authentication, automated networking, SSH key auth, and full infrastructure lifecycle management.</li>
             </ul>
           </div>
         </article>
@@ -1320,15 +1205,12 @@
           </div>
           <div class="details">
             <ul>
-              <li>Deployed <span class="highlight">AWS Storage Gateway (S3 File Gateway)</span> to mount an NFS file
-                share on on-premises Linux servers, enabling seamless hybrid cloud storage and data migration to Amazon
-                S3.</li>
-              <li>Configured <span class="highlight">Cross-Region Replication</span> and S3 Lifecycle policies to
-                automate data redundancy and optimize storage costs.</li>
+              <li>Deployed <span class="highlight">AWS S3 File Gateway</span> to mount NFS shares on on-premises Linux
+                servers, with Cross-Region Replication and S3 Lifecycle policies for automated redundancy and cost
+                optimization.</li>
             </ul>
           </div>
         </article>
-
 
         <article>
           <div class="item-header">
@@ -1339,13 +1221,14 @@
           </div>
           <div class="details">
             <ul>
-              <li>Provisioned a high-availability <span class="highlight">MySQL</span> instance on Amazon RDS within a
-                secure VPC environment.</li>
-              <li>Implemented robust security controls using <span class="highlight">AWS Secrets Manager</span> for
-                automated credential management and secure application connectivity.</li>
+              <li>Provisioned a high-availability <span class="highlight">MySQL RDS</span> instance in a secure VPC with
+                <span class="highlight">AWS Secrets Manager</span> for automated credential management and secure app
+                connectivity.
+              </li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Enterprise Database Migration & Modernization</div>
@@ -1355,13 +1238,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Executed a zero-data-loss migration of a legacy MariaDB system to <span class="highlight">Amazon
-                  RDS</span> using custom dump strategies.</li>
-              <li>Re-architected the application layer to utilize managed database services, significantly reducing
-                operational overhead and improving reliability.</li>
+              <li>Executed a zero-data-loss migration from legacy MariaDB to <span class="highlight">Amazon RDS</span>,
+                re-architecting the application layer to leverage managed DB services and reduce operational overhead.
+              </li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Architecting a Secure Virtual Private Cloud (VPC)</div>
@@ -1371,13 +1254,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Engineered a custom <span class="highlight">Amazon VPC</span> architecture with segmented public and
-                private subnets to enforce granular network security boundaries.</li>
-              <li>Configured <span class="highlight">Internet Gateways</span> and Route Tables to establish secure
-                connectivity for public-facing application servers while isolating private resources.</li>
+              <li>Engineered a custom <span class="highlight">Amazon VPC</span> with segmented public/private subnets,
+                Internet Gateways, and Route Tables to enforce network security boundaries and isolate private
+                resources.</li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Establishing Secure Inter-VPC Peering & Network Monitoring</div>
@@ -1387,14 +1270,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Established private, low-latency connectivity between isolated <span class="highlight">Amazon
-                  VPCs</span> using Peering Connections to enable secure cross-network data transfer without internet
-                exposure.</li>
-              <li>Implemented <span class="highlight">VPC Flow Logs</span> and configured complex Route Tables to audit
-                traffic patterns and validate secure communication channels between application and database tiers.</li>
+              <li>Established private <span class="highlight">VPC Peering</span> with Flow Logs and complex Route Tables
+                to enable secure cross-network data transfer and audit traffic between application and database tiers.
+              </li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Architecting Scalable & Highly Available Web Infrastructure</div>
@@ -1404,15 +1286,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Designed a fault-tolerant Multi-AZ architecture using <span class="highlight">Auto Scaling
-                  Groups</span> and Application Load Balancers to ensure high availability for mission-critical web
-                applications.</li>
-              <li>Configured dynamic scaling policies driven by <span class="highlight">CloudWatch</span> CPU
-                utilization metrics to automatically adjust compute capacity, optimizing performance and cost-efficiency
-                under fluctuating traffic.</li>
+              <li>Designed a fault-tolerant Multi-AZ architecture with <span class="highlight">Auto Scaling
+                  Groups</span>, ALB, and <span class="highlight">CloudWatch</span>-driven scaling policies for
+                cost-efficient, high-availability web applications.</li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Infrastructure as Code Automation with AWS CloudFormation</div>
@@ -1422,14 +1302,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Automated the deployment of multi-tier infrastructure (VPC, Application) using layered <span
-                  class="highlight">AWS CloudFormation</span> templates to ensure consistent, repeatable environments.
-              </li>
-              <li>Managed full stack lifecycles including updates and deletion policies to retain critical data (EBS
-                Snapshots) upon stack termination.</li>
+              <li>Automated multi-tier infrastructure deployment (VPC, Application) using layered <span
+                  class="highlight">AWS CloudFormation</span> templates with full lifecycle management and EBS snapshot
+                retention policies.</li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Automating Multi-Region Infrastructure with CI/CD & IaC</div>
@@ -1439,13 +1318,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Developed modular <span class="highlight">CloudFormation</span> templates to provision replicable
-                network and application layers, establishing a robust Infrastructure as Code (IaC) foundation.</li>
-              <li>Implemented a continuous delivery pipeline using <span class="highlight">AWS CodePipeline</span> and
-                CodeCommit to automate stack updates and enable seamless multi-region deployments.</li>
+              <li>Built modular <span class="highlight">CloudFormation</span> templates and an <span
+                  class="highlight">AWS CodePipeline</span> CI/CD workflow to automate stack updates and enable seamless
+                multi-region deployments.</li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Architecting Decoupled Event-Driven Applications</div>
@@ -1455,15 +1334,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Refactored a tightly coupled monolithic application into a decoupled microservices architecture using
-                <span class="highlight">Amazon SQS</span> and <span class="highlight">Amazon SNS</span> to improve
-                scalability and fault tolerance.
-              </li>
-              <li>Configured event-driven workflows triggered by <span class="highlight">Amazon S3</span> uploads and
-                implemented efficient message polling mechanisms to process asynchronous image processing tasks.</li>
+              <li>Refactored a monolithic app into a decoupled microservices architecture using <span
+                  class="highlight">Amazon SQS and SNS</span>, with S3-triggered event-driven workflows for asynchronous
+                image processing.</li>
             </ul>
           </div>
         </article>
+
         <article>
           <div class="item-header">
             <div class="org-name">Building Scalable Serverless Architectures on AWS</div>
@@ -1473,15 +1350,14 @@
           </div>
           <div class="details">
             <ul>
-              <li>Built a fully serverless inventory tracking system using <span class="highlight">AWS Lambda</span>
-                triggered by <span class="highlight">Amazon S3</span> events to automatically process and ingest data
-                into <span class="highlight">Amazon DynamoDB</span>.</li>
-              <li>Integrated <span class="highlight">Amazon SNS</span> for real-time low-stock notifications and
-                visualized data via a serverless dashboard, eliminating server management overhead and optimizing costs.
-              </li>
+              <li>Built a serverless inventory system using <span class="highlight">AWS Lambda, S3, DynamoDB, and
+                  SNS</span> for automated data ingestion, real-time low-stock alerts, and serverless dashboard
+                visualization.</li>
             </ul>
           </div>
         </article>
+
+
       </section>
 
       <section aria-label="Education">
@@ -1872,9 +1748,9 @@
       </section>
     </main>
 
-    <footer>
+    <!-- <footer>
       <p>Last updated: January 2026</p>
-    </footer>
+    </footer> -->
   </div>
 </body>
 

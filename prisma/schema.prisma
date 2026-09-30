@@ -1,0 +1,90 @@
+generator client {
+ provider = "prisma-client-js"
+}
+datasource db {
+ provider = "postgresql"
+ url = env("DATABASE_URL")
+}
+model User {
+ id String @id @default(cuid())
+ email String @unique
+ passwordHash String
+ profile Profile?
+ createdAt DateTime @default(now())
+}
+model Profile {
+ id String @id @default(cuid())
+ username String @unique
+ name String
+ headline String
+ location String?
+ phone String?
+ email String
+ website String?
+ summary String
+ avatarUrl String?
+ userId String @unique
+ user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+ links Link[]
+ experiences Experience[]
+ projects Project[]
+ educations Education[]
+ certifications Certification[]
+ skills Skill[]
+ updatedAt DateTime @updatedAt
+}
+model Link {
+ id String @id @default(cuid())
+ label String
+ url String
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade)
+}
+model Experience {
+ id String @id @default(cuid())
+ company String
+ role String
+ location String?
+ startDate String
+ endDate String?
+ bullets String[]
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade)
+ order Int @default(0)
+}
+model Project {
+ id String @id @default(cuid())
+ name String
+ url String?
+ description String
+ bullets String[]
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade)
+ order Int @default(0)
+}
+model Education {
+ id String @id @default(cuid())
+ institution String
+ degree String
+ location String?
+ startDate String
+ endDate String?
+ details String?
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade)
+ order Int @default(0)
+}
+model Certification {
+ id String @id @default(cuid())
+ title String
+ issuer String
+ url String?
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade)
+}
+model Skill {
+ id String @id @default(cuid())
+ name String
+ profileId String
+ profile Profile @relation(fields:[profileId], references:[id], onDelete:Cascade )
+}

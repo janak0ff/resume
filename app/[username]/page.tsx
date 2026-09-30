@@ -1,0 +1,2 @@
+import {notFound} from 'next/navigation'; import {getProfile} from '@/lib/data'; import {ResumeView} from '@/components/ResumeView'; import {PrintButton} from '@/components/PrintButton';
+export default async function PublicProfile({params}:{params:Promise<{username:string}>}){const {username}=await params; const profile=await getProfile(username); if(!profile)return notFound(); return <main className="resume-page px-4 py-8 sm:py-12"><div className="no-print mx-auto mb-4 flex max-w-[900px] justify-end"><PrintButton/></div><ResumeView profile={profile}/></main>}
